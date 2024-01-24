@@ -31,7 +31,6 @@ const Page = () => {
   })
 
   const { data } = trpc.anyApiRoute.useQuery()
-
   console.log(data)
 
   const onSubmit = ({
