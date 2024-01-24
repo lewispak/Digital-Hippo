@@ -46,7 +46,7 @@ export const getPayloadClient = async ({
     cached.promise = payload.init({
       email: {
         transport: transporter,
-        fromAddress:"lewispak.dev@gmail.com", // <<-- This needs to be changed to own custom email on Resend.com because domains need to be verified to minimize spam. E.g. "example@company.com". Will NOT work otherwise.
+        fromAddress:"contact@lewispak.dev",
         fromName: "DigitalHippo",
       },
       secret: process.env.PAYLOAD_SECRET,
