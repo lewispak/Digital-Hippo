@@ -7,6 +7,7 @@ import { Span } from "next/dist/trace"
 import Cart from "./Cart"
 import { getServerSideUser } from "@/lib/payload-utils"
 import {cookies} from "next/headers"
+import UserAccountNav from "./UserAccountNav"
 
 const Navbar = async () => {
   const nextCookies = cookies()
@@ -48,10 +49,14 @@ const Navbar = async () => {
                     />
                   )}
 
-                  {user ? <p></p> : (
+                  {user ? (
+                    <UserAccountNav /> 
+                  ) : (
                     <Link 
                       href="/sign-up" 
-                      className={buttonVariants({variant: "ghost"})}>
+                      className={buttonVariants({
+                        variant: "ghost",
+                      })}>
                       Create Account
                     </Link>
                   )}
