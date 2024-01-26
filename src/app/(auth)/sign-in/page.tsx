@@ -95,7 +95,7 @@ const Page = () => {
                 variant: "link",
                 className: "gap-1.5"
               })}
-              href="/sign-ip"
+              href="/sign-in"
             >
               Don&apos;t have an account? Sign-up
               <ArrowRight className="h-4 w-4" />
