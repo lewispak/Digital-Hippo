@@ -22,12 +22,12 @@ export const PRODUCT_CATEGORIES = [
     ],
   },
   {
-    label: "Icons ",
+    label: "Icons",
     value: "icons" as const,
     featured: 
       [
         {
-          name: "Favorite Icon  Picks",
+          name: "Favorite Icon Picks",
           href: "#",
           imageSrc: "/nav/icons/picks.jpg"
         },
