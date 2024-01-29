@@ -43,7 +43,11 @@ export default function Home() {
           </div>
         </div>
 
-        <ProductReel href="/products" title="Brand New" />
+        <ProductReel 
+          query={{sort: "dsc", limit: 4}} 
+          href="/products" 
+          title="Brand New" 
+        />
 
       </MaxWidthWrapper>
 
