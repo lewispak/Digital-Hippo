@@ -33,7 +33,9 @@ const Cart = () => {
     (total, {product}) => total + product.price, 
     0
   )
+
   const fee = 1
+  
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2">
