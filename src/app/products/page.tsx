@@ -30,7 +30,7 @@ const ProductsPage = ({
           category,
           limit: 40,
           sort:
-            sort === 'desc' || sort === 'asc'
+            sort === 'dsc' || sort === 'asc'
               ? sort
               : undefined,
         }}
