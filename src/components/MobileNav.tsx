@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Cart from './Cart'
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -80,12 +81,16 @@ const MobileNav = () => {
                           key={item.name}
                           className='group relative text-sm'>
                           <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                            <Image
-                              fill
-                              src={item.imageSrc}
-                              alt='product category image'
-                              className='object-cover object-center'
-                            />
+                            <Link
+                              href={item.href}
+                            >
+                              <Image
+                                fill
+                                src={item.imageSrc}
+                                alt='product category image'
+                                className='object-cover object-center'
+                              />
+                            </Link>
                           </div>
                           <Link
                             href={item.href}
@@ -106,16 +111,21 @@ const MobileNav = () => {
                   onClick={() => closeOnCurrent('/sign-in')}
                   href='/sign-in'
                   className='-m-2 block p-2 font-medium text-gray-900'>
-                  Sign in
+                  Sign In
                 </Link>
               </div>
+
               <div className='flow-root'>
                 <Link
                   onClick={() => closeOnCurrent('/sign-up')}
                   href='/sign-up'
                   className='-m-2 block p-2 font-medium text-gray-900'>
-                  Sign up
+                  Sign Up
                 </Link>
+              </div>
+
+              <div className="ml-4 flow-root lg:ml-6 ">
+                <Cart />
               </div>
             </div>
           </div>
