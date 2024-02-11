@@ -30,7 +30,7 @@ export function constructMetadata({
   description = 'DigitalHippo is an open-source marketplace for high-quality digital goods.',
   image = '/thumbnail.png',
   icons = '/favicon.ico',
-  noIndex = false,
+  noIndex = true,
 }: {
   title?: string
   description?: string
@@ -49,13 +49,6 @@ export function constructMetadata({
           url: image,
         },
       ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [image],
-      creator: '@joshtriedcoding',
     },
     icons,
     metadataBase: new URL('https://digitalhippo.up.railway.app'),
