@@ -10,9 +10,9 @@ A Next.js project bootstrapped with "create-next-app" using:
 
 <a href="https://digital-hippo-production.up.railway.app/" target="_blank">To view live demo, click here.</a>
 
-If you have any questions, contact me on the details below.
+If you have any questions you can contact me on the details below.
 
-You can contact me on:
+Contact:
 <br>
 <a href="https://www.linkedin.com/in/lewispakoti/" target="_blank">Linkedin</a>
 <br>
