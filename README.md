@@ -8,9 +8,9 @@ A Next.js project bootstrapped with "create-next-app" using:
 - NoSQL database utilization with MongoDB
 - Deployment with Railway.
 
-[To view live demo, click here](https://digital-hippo-production.up.railway.app/)
+<a href="https://digital-hippo-production.up.railway.app/" target="_blank">To view live demo, click here.</a>
 
-If you have any questions, please don't hesitate to contact me on the details below.
+If you have any questions, contact me on the details below.
 
 You can contact me on:
 <br>
